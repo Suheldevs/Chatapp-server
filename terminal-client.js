@@ -4,7 +4,7 @@ import readline from "readline";
 
 // Support: node terminal-client.js [serverUrl] userId  ya  node terminal-client.js userId
 const [, , serverUrlArg, userIdArg] = process.argv;
-const SERVER_URL = userIdArg ? (serverUrlArg || "http://localhost:3000") : "http://localhost:3000";
+const SERVER_URL = userIdArg? (serverUrlArg || "https://chatapp-server-qwdn.onrender.com") : "https://chatapp-server-qwdn.onrender.com";
 const userId = userIdArg || serverUrlArg;
 
 if (!userId) {
